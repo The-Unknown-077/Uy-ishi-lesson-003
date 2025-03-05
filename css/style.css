@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+    transition: .3s;
+}
+
+.navbar{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    transition: .3s;
+}
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.navbar ul li{
+    transition: .3s;
+}
+.navbar ul li:hover{
+    color: #cda274;
+}
+
+.logo{
+    flex: 1;
+}
+/* .................................................................. */
+
+.hero{
+    background: url(/images/IMAGE\ \(14\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 195px 620px 250px 120px;
+    margin-bottom: 106px;
+}
+
+
+
+.h_title{
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 19px;
+}
+
+.hero_context{
+    width: 100%;
+}
+
+.h_desc{
+    color: #4d5053;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.h_btn{
+    font-weight: 400;
+    font-size: 18px;
+    background: #292F36;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 22px 34px;
+    stroke: #D4A373;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: .3s;
+}
+
+.h_btn:hover{
+    scale: 1.05;
+}
+
+.h_btn:active{
+    scale: 0.85;
+    background: #3b424a;
+}
+
+/* .................................................................................. */
+
+.c_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c_title{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+.c_desc{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+.card{
+    text-align: center;
+    padding: 75px 42px;
+    width: 33.33%;
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card:nth-child(2) .c_desc{
+    margin-bottom: 18px;
+}
+
+.c_link{
+    transition: .3s;
+}
+
+.c_link:hover{
+    scale: 1.1;
+}
+
+.cards{
+    margin-bottom: 100px;
+}
+
+
+/* ......................................................................... */
+
+.call_wrapper{
+    display: flex;
+}
+
+.call_title{
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 48px;
+}
+
+.call_context{
+    padding-right: 100px;
+    width: 50%;
+}
+
+.call_desc{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #4d5053;
+}
+
+.call_info p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+.call_number{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 47px;
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f4f0ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.call_btn{
+    font-weight: 400;
+    font-size: 18px;
+    background: #292F36;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 21px 34px;
+    stroke: #D4A373;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: .3s;
+}
+
+.call_btn:hover{
+    scale: 1.05;
+}
+
+.call_btn:active{
+    scale: 0.85;
+    background: #3b424a;
+}
+
+.call_center{
+    margin-bottom: 140px;
+}
+
+
+/* .............................................................. */
+
+.p_wrapper{
+    border-radius: 70px;
+    background: #f4f0ec;
+    padding: 120px 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.p_title h2{
+    font-weight: 400;
+    font-size: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.p_cards{
+    display: flex;
+    gap: 16px;
+}
+
+.p_card{
+    padding: 35px 45px;
+    background: #fff;
+    border-radius: 30px;
+    width: 33.33%;
+}
+
+.description{
+    color: #4d5053;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.loaction{
+    font-weight: 400;
+    font-size: 18px;
+    color: #4d5053;
+    margin-bottom: 32px;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* ............................................................. */
+
+/* Tablets */
+
+@media (max-width: 800px){
+    .navbar{
+        gap: 20px;
+    }
+    .navbar ul{
+        gap: 20px;
+    }
+    .container{
+        padding: 0 40px;
+    }
+    .h_title{
+        font-size: 50px;
+    }
+    .hero{
+        padding: 145px 570px 200px 70px;
+    }
+    .h_desc{
+        font-size: 18px;
+    }
+    .h_btn{
+        padding: 18px 30px;
+    }
+    .call_title{
+        font-size: 38px;
+    }
+    .call_desc{
+        font-size: 18px;
+    }
+    .call_info p{
+        font-size: 20px;
+    }
+    .call_btn{
+        padding: 19px 64px;
+    }
+    .p_title h2{
+        font-size: 35px;
+    }
+    .loaction{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 21px;
+    }
+    .description{
+        font-size: 21px;
+    }
+    .p_card{
+        flex-direction: column;
+        display: none;
+    }
+    .p_wrapper{
+        padding: 90px 30px;
+    }
+}
+
+/* Phones */
+@media (max-width: 500px){
+    .navbar ul{
+        display: none;
+    }
+
+    .logo{
+        align-items: center;
+    }
+
+    .container{
+        padding: 0 20px;
+    }
+    .h_title{
+        font-size: 30px;
+    }
+    .hero{
+        padding: 115px 540px 170px 40px;
+    }
+    .h_desc{
+        font-size: 14px;
+    }
+    .h_btn{
+        padding: 12px 24px;
+    }
+
+    .card{
+        width: 100%;
+    }
+    .call_img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .call_title{
+        font-size: 23px;
+    }
+
+    .call_context{
+        width: 100%;
+    }
+    .call_wrapper{
+        flex-direction: column-reverse;
+    }
+    .call_desc{
+        font-size: 14px;
+    }
+    .call_info p{
+        font-size: 16px;
+    }
+    .call_btn{
+        padding: 15px 60px;
+    }
+    .p_title h2{
+        font-size: 35px;
+    }
+    .loaction{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 21px;
+    }
+    .description{
+        font-size: 21px;
+    }
+    .p_card{
+        flex-direction: column;
+        display: none;
+    }
+    .p_wrapper{
+        padding: 90px 30px;
+    }
+    .circle{
+        width: 60px;
+        height: 60px;
+    }
+}
